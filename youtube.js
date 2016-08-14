@@ -26,7 +26,7 @@ function createVideo(response) {
 
     var videoElement = 
     '<div>' + 
-        '<a href="' + videoID + '" class="lightbox"><img src="' + thumbnailID + '"></a>' + 
+        '<a href="' + videoID + '" class="lightbox video"><img src="' + thumbnailID + '"></a>' + 
     '</div>';
 
     document.getElementById('videoPlayer').innerHTML += videoElement;
