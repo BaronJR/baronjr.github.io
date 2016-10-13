@@ -1,50 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-	<div class="header">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
       <div class="container">
         <a href="#" class="logo-icon">
-          <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/logo.png">
+          <img src="twitch.png">
         </a>
 
-        <ul class="menu">
-          <li><a href="articles.html">Articles</a></li>
-          <li><a href="videos.html">Videos</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="Twitter.com/JamesReilman">Twitter</a></li>
-          <li><a href="Linkedin.com/in/jreilman">Linkedin</a></li>
-        </ul>
+      <ul class="menu">
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Browse</a></li>
+        <li><a href="twitter.com/twitchesports">Twitter</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Profile <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Channel</a></li>
+            <li><a href="#">Video Manager</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <div class="slider">
+
+      <div class="slide active-slide">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy video col-xs-12">
+              <div id="twitchPlayer"></div>
+            </div>
+          </div>
+        </div>
+      </div>      
+
+      <div class="slide slide-feature">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <a href="twitch.tv/riotgames"><img src="lolworlds_logo.png"></a>
+              <a href="twitch.tv/riotgames">Watch Now</a>
+            </div>
+            
+          </div>
+        </div>      
+      </div> 
+
+      <div class="slide">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-5">
+              <h1>Twitch Esports</h1>
+              <h2>Introducing Clips</h2>
+              <p>All your favorite content in bite-sized pieces. Simply tune in, and watch the best highlights from around the world. Think the game looks sick? Follow and tune in for the next broadcast!</p>
+              
+            </div>
+            <div class="slide-img col-xs-7">
+              <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/magazines.png">
+            </div>
+          </div>
+        </div>      
+      </div> 
+
+
+      <div class="slide">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-5">
+              <h1>Badges & Widgets</h1>
+              <p>Level up your Esports experience by participating in Chat. You AND your favorite player both win when you play!</p>
+              
+              <ul class="get-app">
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ios.png"></a></li>
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/android.png"></a></li>
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/windows.png"></a></li>
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/blackberry.png"></a></li>
+              </ul>
+            </div>
+            <div class="slide-img col-xs-7">
+              <img src="badges.jpeg">
+            </div>
+          </div>
+        </div>      
+      </div> 
+
+    </div>
+
+    <div class="slider-nav">
+      <a href="#" class="arrow-prev"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png"></a>
+      <ul class="slider-dots">
+        <li class="dot active-dot">&bull;</li>
+        <li class="dot">&bull;</li>
+        <li class="dot">&bull;</li>
+        <li class="dot">&bull;</li>
+      </ul>
+      <a href="#" class="arrow-next"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-next.png"></a>
+    </div> 
+    
+    <div class="videoSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="calendar.png">
+          </div>
+        </div>
+      
+        <!--<div class="row">
+        <div id="videoPlayer">
+          <iframe id="ytplayer" type="text/html" width="640" height="390"
+  src="https://www.youtube.com/embed/M7lc1UVf-VE?showinfo=0"
+  frameborder="0"></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL19501DCDB5767545" frameborder="0" allowfullscreen></iframe>
+        </div>-->
+
+<!--         <div>
+          <a href="image1.jpg" class="lightbox"><img src="thumbnail1.jpg"></a>
+        </div> -->
+
+<!--         <div>
+          <iframe 
+            src="http://player.twitch.tv/?channel=eleaguetv&autoplay=false" 
+            height="720" 
+            width="1280" 
+            frameborder="0" 
+            scrolling="no" 
+            autoplay="false" 
+            allowfullscreen="true">
+          </iframe>
+        </div> -->
+
+
+        <div class="row content">
+          <div class="col-xs-6">
+            <a class="twitter-timeline" data-width="400" data-height="800" href="https://twitter.com/TwitchEsports">Tweets by TwitchEsports</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <!--<a class="twitter-timeline" data-width="100%" data-height="500" data-theme="light" href="https://twitter.com/JamesReilman">Tweets by JamesReilman</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+          </div>
+
+          <div class="col-xs-6">
+            <div>
+              <a href="D4-7Lu-8Cn0" class="lightbox video"><img style="width:400px" src="https://i.ytimg.com/vi_webp/D4-7Lu-8Cn0/sddefault.webp"></a>
+            </div>
+          </div>
+        </div>
+        <!--<div>
+          <pre id="response"></pre>
+        </div>-->
       </div>
     </div>
 
-	<div class="main">
-		<div class="container">
-		
-		</div>
-	</div>
-
-	<div class="supporting">
-		<div class="container">
-		</div>
-	</div>
-
-	<div class="footer">
-		<div class="container">
-		
-		</div>
-	</div>
-
-	<script src="youtube.js" type="text/javascript"></script>
+    <script src="youtube.js" type="text/javascript"></script>
     <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="app.js"></script>
     <script src="lightbox.js"></script>
     <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
     <script type="text/javascript" src="twitch.js"></script>
-</body>
+  </body>
 </html>

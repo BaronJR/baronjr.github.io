@@ -14,4 +14,4 @@ function embedStream(channel) {
     player.setVolume(0.5);
 };
 
-embedStream("eleaguetv");
+embedStream("baroncast");
