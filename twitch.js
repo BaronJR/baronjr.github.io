@@ -6,7 +6,7 @@ function embedStream(channel) {
         width: 854,
         height: 480,
         channel: channel, 
-        autoplay: false,
+        autoplay: true,
         //video: "{VIDEO_ID}"       
     };
 
