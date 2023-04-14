@@ -272,7 +272,7 @@ p {
   margin: 0;
   overflow: hidden;
   padding: 0;
-  width: 256px;
+  width: 320px;
 }
 #footer div ul li {
   display: block;
@@ -283,7 +283,7 @@ p {
   width: 44px;
 }
 #footer div ul li a {
-  background: url(../images/icons.jpg) no-repeat 0 0;
+  background: url(../images/icons.png) no-repeat 0 0;
   display: block;
   height: 44px;
   margin: 0;
@@ -314,6 +314,13 @@ p {
 }
 #footer div ul li #linkedin:hover {
   background-position: -44px -132px;
+}
+
+#footer div ul li #twitch {
+  background-position: 0 -176px;
+}
+#footer div ul li #twitch:hover {
+  background-position: -44px -176px;
 }
 
 #footer a {
