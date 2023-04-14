@@ -3,6 +3,16 @@ var main = function() {
     $('.dropdown-menu').toggle();
   });
 
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.backgroundColor = "#fff";
+    document.getElementById("header").style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.2)";
+  } else {
+    document.getElementById("header").style.boxShadow = "none";
+  }
+}
+
+window.onscroll = function() {scrollFunction()};
   
   $('.arrow-next').click(function() {
     var currentSlide = $('.active-slide');

@@ -1,36 +1,71 @@
 /* General */
 
-.container {
-  width: 960px;
+body {
+  margin: 0px;
+
+  font-family: 'Oswald', sans-serif;
 }
 
+p {
+  vertical-align: middle;
+  margin: 0px;
+}
 
 /* Header */
 
-.header {
+#header {
   background-color: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
   
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   
-  font-size: 17px;
-  padding: 15px;
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  margin: 0;
+}
+
+#header div {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  padding-left: 36px;
+}
+
+.home-icon {
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  display: inline-block;
+  float: left;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #898989;
 }
 
 
 /* Menu */ 
 
-.header .menu {
+#header .menu {
+  display: inline-block;
   float: right;
   list-style: none;
-  margin-top: 5px;
+
+  height: 20px;
+  padding: 15px;
+  margin: 10px;
 }
 
 .menu > li {
   display: inline;
   padding-left: 20px;
   padding-right: 20px;
+
+  font-size: 17px;
 }
 
 .menu a {
@@ -42,7 +77,11 @@
 .dropdown-menu {
   font-size: 16px;
   margin-top: 5px;
-  min-width: 105px;
+  min-width: 10px;
+  z-index: 9;
+  border: 1px solid #ddd;
+  background-color: rgba(255,255,255);
+  display: none;
 }
 
 .dropdown-menu li a {
@@ -51,6 +90,23 @@
   font-weight: 300;
 }
 
+/* Body */
+#body {
+  background: linear-gradient(to bottom right, #fe8c7c, #ffdfef 50%, #ff8c66 75%, #6a1610);
+  margin: 0px;
+}
+
+/* Feature */
+.feature {
+  height:1000px;
+  padding:50px;
+}
+
+.feature h2 {
+  color: #000;
+  font-size: 30;
+  text-align: center;
+}
 
 /* Carousel */
 
@@ -114,7 +170,7 @@
 
 .slide-feature {
   text-align: center;
-  background-image: url('lolworlds.png');
+  background-image: url('../images/lolworlds.png');
   height: 470px;
 }
 
@@ -136,28 +192,26 @@
 
 .slider-nav {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-.arrow-prev {
-  margin-right: 45px;
+.arrow-prev, .arrow-next {
+  height: 20px;
+  padding: 7px;
+  margin: 16px;
   display: inline-block;
-  vertical-align: top;
-  margin-top: 9px;
-}
-
-.arrow-next {
-  margin-left: 45px;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 9px;
+  text-decoration: none;
+  color: #898989;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .slider-dots {
   list-style: none;
   display: inline-block;
   padding-left: 0;
-  margin-bottom: 0;
+  vertical-align: middle;
+  margin: 16px;
 }
 
 .slider-dots li {
@@ -169,6 +223,94 @@
 
 .slider-dots li.active-dot {
   color: #363636;
+}
+
+/* Footer */
+
+#footer {
+  background: #252525;
+  margin: 0px;
+  padding: 36px;
+}
+
+#footer nav {
+  display: inline-block;
+  float: left;
+  vertical-align: middle;
+  padding: 10px;
+}
+#footer ul {
+  display: inline-block;
+  float: right;
+}
+
+#footer div {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+}
+#footer div p {
+  color: #fff;
+  float: left;
+  line-height: 44px;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+#footer div ul {
+  display: block;
+  float: right;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 256px;
+}
+#footer div ul li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+  width: 44px;
+}
+#footer div ul li a {
+  background: url(../images/icons.jpg) no-repeat 0 0;
+  display: block;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  text-indent: -99999px;
+  width: 44px;
+}
+#footer div ul li #twitter {
+  background-position: 0 0;
+}
+#footer div ul li #twitter:hover {
+  background-position: -44px 0;
+}
+#footer div ul li #facebook {
+  background-position: 0 -44px;
+}
+#footer div ul li #facebook:hover {
+  background-position: -44px -44px;
+}
+#footer div ul li #youtube {
+  background-position: 0 -88px;
+}
+#footer div ul li #youtube:hover {
+  background-position: -44px -88px;
+}
+#footer div ul li #linkedin {
+  background-position: 0 -132px;
+}
+#footer div ul li #linkedin:hover {
+  background-position: -44px -132px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
 }
 
 /* App links */
