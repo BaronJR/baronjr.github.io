@@ -98,8 +98,8 @@ p {
 
 /* Feature */
 .feature {
-  height:1000px;
-  padding:50px;
+  height: 500px;
+  padding: 50px;
 }
 
 .feature h2 {
@@ -108,7 +108,17 @@ p {
   text-align: center;
 }
 
+/* Highlight */
+.highlight img {
+  width: 100%;
+}
+
 /* Carousel */
+
+#carousel {
+  height: 500px;
+  padding: 50px;
+}
 
 .slider {
   position: relative;
