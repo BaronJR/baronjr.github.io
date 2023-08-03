@@ -1,5 +1,5 @@
 # baronjr.github.io
-Personal Site
+Wedding site!
 
 * Header
 ** Home button
